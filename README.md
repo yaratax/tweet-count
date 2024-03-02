@@ -27,10 +27,6 @@ Feel free to customize the project to fit your needs. Here are some areas you mi
 
 Contributions are welcome! If you find any issues or have ideas for improvements, please open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Acknowledgments
 
 - The project uses HTML, CSS, and JavaScript.
