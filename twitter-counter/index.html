@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Twitter Character Counter</h1>
+    <h4>Check your tweet length exactly as it will appear on Twitter.</h4>
+    <input type="text" oninput="counter()" name="tweet" id="tweet"
+        placeholder="Start typing; you can enter up to 280 characters">
+    <p>Twitter character count: <span id="charCount">0</span></p>
+
+    <script> // src="main.js"
+        function counter() {
+            var input = document.getElementById('tweet');
+            var charCount = document.getElementById('charCount');
+
+            var count = input.value.length;
+            charCount.innerText = count;
+
+            if (count > 280) {
+                charCount.parentElement.classList.add('over-limit'); // Add the class to the parent paragraph
+            } else {
+                charCount.parentElement.classList.remove('over-limit'); // Remove the class from the parent paragraph
+            }
+        }
+    </script>
+</body>
+
+</html>
